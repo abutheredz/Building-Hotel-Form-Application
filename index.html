@@ -73,41 +73,55 @@
         </fieldset>
 
         <fieldset>
-          <legend>Ratings</legend>
+         <legend>Ratings</legend>
+  <table border="0" cellpadding="5">
+    <tr>
+      <td><label for="service">How was the service?</label></td>
+      <td>
+        <select name="service" id="service">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select>
+      </td>
+    </tr>
 
-          <label for="service">How was the service?</label>
+    <tr>
+      <td><label for="food">How was the food?</label></td>
+      <td>
+        <select name="food" id="food">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select>
+      </td>
+    </tr>
 
-          <select name="service" id="service">
-            <option value="poor">Poor</option>
-            <option value="satisfactory">Satisfactory</option>
-            <option value="good">Good</option>
-            <option value="very-good">Very Good</option>
-            <option selected value="excellent">Excellent</option>
-          </select>
-         <label for="food">How was the food?</label>
-          <select name="food" id="food">
-            <option value="poor">Poor</option>
-            <option value="satisfactory">Satisfactory</option>
-            <option value="good">Good</option>
-            <option value="very-good">Very Good</option>
-            <option selected value="excellent">Excellent</option>
-          </select>
-        </fieldset>
-        
-        <label for="comments">Other Comments?</label>
-        <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-        <textarea cols="20" rows="10" name="comments" id="comments"></textarea>
-     
+    <tr>
+      <td valign="top"><label for="comments">Other Comments?</label></td>
+      <td>
+        <textarea cols="20" rows="5" name="comments" id="comments"></textarea>
+      </td>
+    </tr>
+
+    <tr>
+      <td></td>
+      <td>
         <button type="submit">Submit</button>
+      </td>
+    </tr>
+  </table>
 
         
       </form>
     </main>
   </body>
 </html>
+
 
 
 
